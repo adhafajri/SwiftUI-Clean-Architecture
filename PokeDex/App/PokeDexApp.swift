@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Pokemon_Clean_ArchitectureApp: App {
+struct PokeDexApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
