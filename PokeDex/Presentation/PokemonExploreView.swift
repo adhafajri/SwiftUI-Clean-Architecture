@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PokemonExploreView: View {
     let getPokemonListUseCase: GetPokemonListUseCase = GetPokemonListUseCase(pokeDexRepository: PokeDexRepository.shared)
     
     @State private var pokemonList: [PokemonEntity] = []
@@ -48,8 +48,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PokemonExploreView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PokemonExploreView()
     }
 }
