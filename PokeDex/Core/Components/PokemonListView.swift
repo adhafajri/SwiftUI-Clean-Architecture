@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PokemonListView: View {
-    var pokemon: PokemonEntity
+    var pokemon: PokemonModel
 
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: pokemon.imageURL)) { image in
+            AsyncImage(url: string: pokemon.imageURL) { image in
                 image
                     .image?
                     .resizable()
