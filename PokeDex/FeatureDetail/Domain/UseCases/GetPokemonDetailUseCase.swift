@@ -8,14 +8,14 @@
 import Foundation
 
 class GetPokemonDetailUseCase {
-    let pokeDexRepository: PokeDexRepositoryProtocol
+    let repository: DetailRepositoryProtocol
     
-    init(pokeDexRepository: PokeDexRepositoryProtocol) {
-        self.pokeDexRepository = pokeDexRepository
+    init(repository: DetailRepositoryProtocol) {
+        self.repository = repository
     }
     
     func execute(id: Int) async throws -> PokemonDetailEntity? {
-        guard let pokemonDetail: PokemonDetailEntity = try await pokeDexRepository.fetchPokemonDetail(id: id) else {
+        guard let pokemonDetail: PokemonDetailEntity = try await repository.fetchPokemonDetail(id: id) else {
             return nil
         }
         

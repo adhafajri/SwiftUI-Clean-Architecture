@@ -8,9 +8,11 @@
 import Foundation
 
 struct Constants {
-    static let pokeApiURL = "https://pokeapi.co/api/v2/"
-    static let pokeApiArtworkURL = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/%d.png"
-    static let timeoutInterval = 15.0
+    static let pokeApiURL: String = "https://pokeapi.co/api/v2/"
+    static let pokeApiArtworkURL: String = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/%d.png"
+    static let pokeApiTimeoutInterval: Double = 15.0
+
+    static let pokeApiPokemonListlimit: Int = 20
     
     enum APIEndpoint {
         case getPokemonList(limit: Int, offset: Int)

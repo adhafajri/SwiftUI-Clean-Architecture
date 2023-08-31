@@ -12,6 +12,7 @@ class NetworkUtils {
     
     func fetch<T: Codable>(from url: URL) async throws -> T {
         let request = URLRequest(url: url)
+        request.timeoutInterval = Constants.pokeApiTimeoutInterval
         
         let (data, response) = try await URLSession.shared.data(for: request)
         

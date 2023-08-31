@@ -8,13 +8,13 @@
 import Foundation
 
 class GetPokemonListUseCase {
-    let pokeDexRepository: ExploreRepositoryProtocol
+    let repository: ExploreRepositoryProtocol
     
     init(pokeDexRepository: ExploreRepositoryProtocol) {
-        self.pokeDexRepository = pokeDexRepository
+        self.repository = pokeDexRepository
     }
     
     func execute(limit: Int, offset: Int) async throws -> [PokemonEntity] {
-        return try await pokeDexRepository.fetchPokemons(limit: limit, offset: offset)
+        return try await repository.fetchPokemons(limit: limit, offset: offset)
     }
 }
