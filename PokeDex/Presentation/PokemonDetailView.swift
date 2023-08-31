@@ -16,7 +16,7 @@ struct PokemonDetailView: View {
             if pokemonDetail == nil {
                 Text("Loading...")
             } else {
-                AsyncImage(url: pokemonDetail?.pokemon.imageURL) { image in
+                AsyncImage(url: URL(string: pokemonDetail?.pokemon.imageURL)) { image in
                     image
                         .image?
                         .resizable()
