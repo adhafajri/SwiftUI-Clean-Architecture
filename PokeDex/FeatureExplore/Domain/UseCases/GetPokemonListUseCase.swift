@@ -8,9 +8,9 @@
 import Foundation
 
 class GetPokemonListUseCase {
-    let pokeDexRepository: PokeDexRepositoryProtocol
+    let pokeDexRepository: ExploreRepositoryProtocol
     
-    init(pokeDexRepository: PokeDexRepositoryProtocol) {
+    init(pokeDexRepository: ExploreRepositoryProtocol) {
         self.pokeDexRepository = pokeDexRepository
     }
     

@@ -7,7 +7,6 @@
 
 import Foundation
 
-protocol PokeDexRepositoryProtocol {
+protocol ExploreRepositoryProtocol {
     func fetchPokemons(limit: Int, offset: Int) async throws -> [PokemonEntity]
-    func fetchPokemonDetail(id: Int) async throws -> PokemonDetailEntity?
 }

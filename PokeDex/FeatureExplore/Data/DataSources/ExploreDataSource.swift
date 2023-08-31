@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PokeDexDataSource {
+class ExploreDataSource {
     func fetchPokemons(limit: Int, offset: Int) async throws -> PokemonListResponseModel {
         guard let url: URL = Constants.APIEndpoint.getPokemonList(limit: limit, offset: offset).url else {
             throw URLError(.badURL)

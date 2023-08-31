@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PokemonExploreView: View {
-    let getPokemonListUseCase: GetPokemonListUseCase = GetPokemonListUseCase(pokeDexRepository: PokeDexRepository.shared)
+    let getPokemonListUseCase: GetPokemonListUseCase = GetPokemonListUseCase(pokeDexRepository: ExploreRepository.shared)
     
     @State private var pokemonList: [PokemonEntity] = []
     @State private var offset: Int = 0
