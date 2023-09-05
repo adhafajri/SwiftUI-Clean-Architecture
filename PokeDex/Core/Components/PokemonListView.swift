@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct PokemonListView: View {
-    var pokemon: PokemonEntity
-    
+    var pokemon: PokemonModel
+
     var body: some View {
         HStack {
             AsyncImage(url: pokemon.imageURL) { image in
