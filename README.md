@@ -19,4 +19,4 @@ It uses [PokeAPI](https://pokeapi.co/) for the Pokemon list and details.
 - App: This is the layer if we wanna put stuff like AppDelegate, SceneDelegate, or our @main struct.
 - Core: This layer contains app-wide shared code like utility functions, constants, and extensions. The above layers can be used, but you should not depend on them.
 
-Check out the more detailed explanation on my ![Medium](https://medium.com/@adha_fajri/clean-architecture-in-swiftui-b184e0e687f8)
+Check out the more detailed explanation on my [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@adha_fajri/swiftui-mvvm-101-8198dc3855ab)
