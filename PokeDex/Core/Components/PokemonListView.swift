@@ -12,7 +12,7 @@ struct PokemonListView: View {
 
     var body: some View {
         HStack {
-            AsyncImage(url: string: pokemon.imageURL) { image in
+            AsyncImage(url: pokemon.imageURL) { image in
                 image
                     .image?
                     .resizable()

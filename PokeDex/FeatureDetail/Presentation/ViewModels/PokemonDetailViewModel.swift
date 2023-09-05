@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class PokemonDetailViewModel: ObservableObject {
     let getPokemonDetailUseCase = GetPokemonDetailUseCase(repository: DetailRepository())
     

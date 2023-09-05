@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct PokemonDetailView: View {
-    private let viewModel: PokemonDetailViewModel = PokemonDetailViewModel()
     var id: Int
+    
+    @StateObject private var viewModel: PokemonDetailViewModel = PokemonDetailViewModel()
     
     var body: some View {
         VStack {
