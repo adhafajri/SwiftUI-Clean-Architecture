@@ -2,7 +2,6 @@
 
 This is a SwiftUI app with Clean Architecture. 
 
-
 <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*uvrsXX8w-zwwCbKqF_T_SA.png" width="300" />
 
 It uses [PokeAPI](https://pokeapi.co/) for the Pokemon list and details.
